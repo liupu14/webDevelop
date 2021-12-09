@@ -1,0 +1,27 @@
+
+.opacity-normal {
+    opacity: 0.6;
+}
+
+.opacity-less {
+    opacity: 0.7 !important;
+}
+
+
+.ui.button:hover {
+    color: teal;
+}
+
+
+/* ----- color ----- */
+.custom-black {
+    color: #333;
+}
+
+
+/* ----- shadow ----- */
+
+.shadow-small {
+    -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+}

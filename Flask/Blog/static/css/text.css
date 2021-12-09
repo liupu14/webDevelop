@@ -1,0 +1,27 @@
+.text-extralight{
+    font-weight: 200 !important;
+}
+.text-light{
+    font-weight: 300 !important;
+}
+.text-regular{
+    font-weight: 400 !important;
+}
+.text-medium{
+    font-weight: 500 !important;
+}
+.text-semibold{
+    font-weight: 600 !important;
+}
+.text-bold{
+    font-weight: 800 !important;
+}
+
+
+.text-letter-spacing{
+    letter-spacing: 1px !important;
+}
+
+.text-line-height{
+    line-height: 1.8;
+}

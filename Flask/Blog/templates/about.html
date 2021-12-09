@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %} 
+<div class="ui container">
+    <div class="ui stackable grid">
+        <div class="eleven wide column">
+            <img src="static/images/placeholder.png" alt="" class="ui rounded image">
+        </div>
+        <div class="five wide column">
+
+            <div class="ui top attached segment">
+                <div class="ui header">关于我</div>
+            </div>
+
+            <div class="ui attached segment">
+                <p class="text-light">一段自我介绍</p>
+                <p class="text-light">一段自我介绍</p>
+            </div>
+            <div class="ui attached segment">
+                <div class="ui labels">
+                    <div class="ui orange basic label text-light">编程</div>
+                    <div class="ui orange basic label text-light">国漫</div>
+                    <div class="ui orange basic label text-light">美剧</div>
+                    <div class="ui orange basic label text-light">折腾</div>
+                </div>
+            </div>
+            <div class="ui attached segment">
+                <div class="ui labels">
+                    <div class="ui teal basic label text-light">Java</div>
+                    <div class="ui teal basic label text-light">Oracle</div>
+                </div>
+            </div>
+            <div class="ui bottom attached segment">
+                <a href="#" class="ui basic circular icon button" id="github-icon">
+                    <i class="github icon"></i>
+                </a>
+                <a href="#" class="ui basic circular icon button" id="wechat-icon">
+                    <i class="weixin icon"></i>
+                </a>
+                <a href="#" class="ui basic circular icon button" id="qq-icon">
+                    <i class="qq icon"></i>
+                </a>
+            </div>
+            <div class="ui flowing popup transition hidden layout-padding-tiny" id="github-QR">
+                <img src="static/images/github.png" alt="" class="ui rounded image" style="width: 100px">
+            </div>
+            <div class="ui flowing popup transition hidden layout-padding-tiny" id="wechat-QR">
+                <img src="static/images/github.png" alt="" class="ui rounded image" style="width: 100px">
+            </div>
+            <div class="ui flowing popup transition hidden layout-padding-tiny" id="qq-QR">
+                <img src="static/images/github.png" alt="" class="ui rounded image" style="width: 100px">
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock content %}
