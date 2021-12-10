@@ -2,9 +2,9 @@
 
 {% block content %}
 <div class="custom-container layout-padding-top-bottom-large">
-    <form class="ui form">
+    <form class="ui form" method="POST" action="">
         {{ form.hidden_tag() }}
-        <legend class="ui dividing header">Shipping Information</legend>
+        <legend class="ui dividing header">Login in </legend>
         <div class="field">
           <label>{{form.email.label}}</label>
           {% if form.email.errors %}
@@ -38,18 +38,24 @@
           </div>
         </div>
         <div class="field">
-            {{ form.submit }}
+          <div class="ui basic segment">
+            <div class="ui grid">
+              <div class="ui nine wide column">
+                {{ form.submit(class="btn btn-outline-info") }}
+              </div>
+              <div class="ui seven wide column">
+                <small>
+                  <a href="#">Forgot Password?</a>
+                </small>
+              </div>
+            </div>
+          </div> 
         </div>
-        <small>
-            <a href="#">Forgot Password?</a>
-        </small>
       </form>
-      <div class="ui basic segment">
-        <div class="ui container">
-            <small class="ui header">
-                Need An Account? <a href="{{ url_for('register') }}" style="font-size: 16;">Sign Up Now</a>
-            </small>
-        </div>
+      <br>
+      <div class="ui bottom attached warning message">
+        <i class="icon help"></i>
+        Need An Account? <a href="{{ url_for('register')}}">Sign Up Now</a> instead.
       </div>
-      
+      <br>
 {% endblock content %}
